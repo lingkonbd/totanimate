@@ -88,12 +88,11 @@ p:not(:last-child) {
 
 /* wlc-hero-area2 */
 .wlc-hero-area2 {
-    height: 100vh;
+    height: 835px;
     background: #EEEAE2;
     overflow-x: hidden;
     position: relative;
     padding-top: 35px;
-    display: flex;
 }
 
 section.wlc-hero-area2:before {
@@ -185,7 +184,7 @@ section.quote-area .container {
     line-height: 45px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #5F5F5F;
+    color: var(tot-darkgray-color);
 }
 
 
@@ -213,7 +212,7 @@ section.book-area .container {
     font-size: 36px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: #5F5F5F;
+    color: var(tot-darkgray-color);
     margin-bottom: 0;
     line-height: 196.5%;
 
@@ -257,7 +256,80 @@ footer.footer-area p {
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {}
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .wlc-hero-area2 {
+        height: 750px;
+        padding-top: 50px;
+    }
+
+    .hero-content h2 {
+        color: #5D4D48;
+        font-weight: 700;
+        font-size: 52px;
+        line-height: 62px;
+    }
+
+    .wlc-hero-area2 .left-image {
+        left: -150px;
+    }
+
+    .hero-content h3 {
+        font-size: 42px;
+    }
+
+    .book-content p {
+        font-size: 24px;
+    }
+
+    .hero-content p.author {
+        font-size: 20px;
+        line-height: 36px;
+    }
+
+    .hero-content p.author span {
+        font-size: 30px;
+    }
+
+    .hero-content p.schedule {
+        font-size: 17px;
+    }
+
+    .quote-content p {
+        font-size: 22px;
+        line-height: 42px;
+    }
+
+    section.quote-area .container {
+        padding: 70px 30px;
+    }
+
+    section.quote-area {
+        margin-top: -40px;
+    }
+
+    section.book-area .container {
+        border-radius: 16px;
+        height: 170px;
+    }
+
+    .book-content {
+        margin-top: 42px;
+    }
+
+    .book-img img {
+        top: -54px;
+        width: 210px;
+    }
+
+    section.book-area {
+        padding: 45px 0;
+        margin-bottom: 40px;
+    }
+
+    footer.footer-area {
+        padding: 30px 0;
+    }
+}
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {}
 
@@ -265,7 +337,6 @@ footer.footer-area p {
     .wlc-hero-area2 {
         padding: 60px 0 0;
         height: 650px;
-        display: inherit;
     }
 
     .hero-content h2 {
@@ -317,7 +388,7 @@ footer.footer-area p {
 
     .quote-content p {
         font-size: 20px;
-        line-height: 36px;
+        line-height: 30px;
     }
 
     section.book-area {
@@ -339,11 +410,20 @@ footer.footer-area p {
         line-height: 32px;
     }
 
+    .book-img {
+        text-align: center;
+    }
+
     .book-img img {
         position: inherit;
         top: 0;
-        margin-left: 20px;
+        text-align: center;
+        width: 200px;
+        margin-left: -35px;
+    }
 
+    footer.footer-area {
+        padding: 30px 0;
     }
 
     footer.footer-area p {
