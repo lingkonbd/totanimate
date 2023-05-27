@@ -12,6 +12,7 @@ const eventSessionText = document.querySelector('.event-session');
 const eventSessionTwo = document.querySelector('.event-session-2');
 const headingLarge = document.querySelector('.wlc-content h1');
 const headingMidum = document.querySelector('div.display-4');
+const roundBox1 = document.querySelector('#roundBox1');
 const roundBox = document.querySelector('#roundBox2');
 const roundBox3 = document.querySelector('#roundBox3');
 const roundBox4 = document.querySelector('#roundBox4');
@@ -20,6 +21,7 @@ const rightImg1 = document.querySelector('#rightImg1');
 const letImg2 = document.querySelector('#letImg2');
 const rightImg2 = document.querySelector('#rightImg2');
 const sectionTextPra = document.querySelectorAll('.section-content p');
+const signUpOne = document.querySelector('#signUpOne');
 const signUpTwo = document.querySelector('#signUpTow');
 
 btnScrollDownOne.addEventListener('click', (e) => {
@@ -129,6 +131,16 @@ btnScrollUpperOne.addEventListener('click', (e) => {
     gsap.fromTo(
         headingLarge, 
         { y: -100},
+        {opacity: 1, y: 0, duration: 1},
+    );
+    gsap.fromTo(
+        roundBox1, 
+        {height: 800, opacity: 0,},
+        {duration: 1, height: 390, opacity: 1, }, 
+    );
+    gsap.fromTo(
+        signUpOne, 
+        { y: -300, opacity:0},
         {opacity: 1, y: 0, duration: 1},
     );
 });

@@ -84,7 +84,7 @@ p:not(:last-child){
 
 .wlc-hero-area, .about-event-area, .about-person-area, .contact-area{
     background: var(--tot-gradient-color);
-    height: 100vh;
+    height: 900px;
     position: relative;
     z-index: 1;
     display: flex;
@@ -157,8 +157,10 @@ p:not(:last-child){
     font-size: 22px;
     font-weight: 500;
     margin: 76px auto 0;
-    transition: all 0.3s ease 0s;
+    /* transition: all 0.3s ease 0s; */
     color: var(--tot-brown-color);
+    position: relative;
+    z-index: 999;
 }
 .sign-btn:hover{
     background: var(--tot-brown-color);
@@ -238,6 +240,8 @@ p:not(:last-child){
     letter-spacing: 0.03em;
     color: var(--tot-white-color);
     margin-bottom: 40px;
+    position: relative;
+    z-index: 99;
 }
 
 .about-person-area .section-content .scroll-up {
@@ -298,13 +302,46 @@ p:not(:last-child){
 
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-
+    .wlc-content h2 {font-size: 65px;}
+    .wlc-content h1 {line-height: 110px;margin-top: 85px;}
+    .scroll-btn {margin-top: 60px;}
+    .section-content .left-image, .section-content .right-image { width: 530px;}
+    .section-content .right-image {width: 490px;}
+    .section-content .round-box {height: 825px;}
+    .about-content .scroll-btn { margin: 30px 0 0;}
 
 }
 
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-
+    .wlc-hero-area, .about-event-area, .about-person-area, .contact-area{height: 100vh;}
+    
+    .wlc-content h1 {
+        font-size: 66px;
+        line-height: 85px;
+        margin-top: 70px;
+    }
+    .wlc-content h2 {
+        font-size: 50px;
+        line-height: 73px;
+    }
+    .wlc-content p {
+        font-size: 20px;
+        line-height: 31px;
+    }
+    .round-box {
+        width: calc(100% - 72px);
+    }
+    .about-content .display-3 {
+        font-size: 50px;
+    }
+    .about-content p {font-size: 18px;line-height: 33px;}
+    .section-content .left-image, .section-content .right-image { width: 454px;}
+    .section-content .right-image { width: 415px; }
+    .about-content .scroll-btn {margin: 40px 0 0;z-index: 999;position: relative;}
+    .sign-btn {position: relative;z-index: 999;}
+    .about-person-area .section-content p {max-width: calc(100% - 230px);margin-left: auto;margin-right: auto; position: relative;
+        z-index: 9;}
 
 }
 
@@ -315,6 +352,113 @@ p:not(:last-child){
 }
 
 @media (max-width: 575px) {
+    .wlc-hero-area, .about-event-area, .about-person-area, .contact-area {
+        height: auto;
+    }
+    .wlc-content h1 {
+        font-size: 43px;
+        line-height: 55px;
+        margin-top: 40px;
+    }
+    .wlc-content h1 br {
+        display: none;
+    }
+    .wlc-content h2 {
+        font-size: 34px;
+        line-height: 46px;
+        margin-bottom: 0;
+    }
+    .wlc-content p {
+        font-size: 16px;
+        line-height: 24px;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .sign-btn {
+        margin: 68px auto 0;
+        height: 60px;
+        line-height: 60px;
+        font-size: 18px;
+        max-width: 250px;
+    }
+    .round-box {
+        width: calc(100% - 72px);
+        height: 350px;
+    }
+    .about-content .display-4 {
+        font-size: 30px;
+        line-height: 43px;
+    }
+    .section-content .round-box {
+        height: calc(100% - 300px);
+    }
+    .about-event-area {
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+    .event-session-2 {
+        display: none !important;
+    }
+    .section-content .left-image, .section-content .right-image {
+        width: 235px;
+        z-index: 0;
+    }
+    .section-content .right-image {
+        width: 219px;
+    }
+    .about-content .display-5 {
+        line-height: 50px;
+    }
+    .about-content .display-5 span {
+        font-size: 26px;
+        line-height: 33px;
+    }
+    .about-content #signUpTow {
+        position: relative;
+        z-index: 99;
+        margin-top: 99px;
+    }
+    .about-content .scroll-btn {
+        z-index: 999;
+        position: relative;
+    }
+    .about-person-area {
+        padding-bottom: 180px;
+    }
+    .about-person-area .section-content p {
+        font-size: 18px;
+        line-height: 28px;
+        max-width: 270px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about-person-area .section-content .left-image {
+        left: -90px;
+    }
+    .about-person-area .section-content .right-image {
+        right: -70px;
+    }
+    
+    .contact-area {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    .contact-content .scroll-up {
+        margin: 0 auto 50px;
+    }
+    .contact-content .book {
+        padding-right: 76px;
+    }
+    .contact-content h2 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .contact-content p {
+        font-size: 18px;
+        line-height: 30px;
+        margin-top: 25px;
 
+    }
+    
     
 }
