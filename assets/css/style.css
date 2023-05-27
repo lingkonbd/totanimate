@@ -1,0 +1,320 @@
+:root {
+    --tot-orange-color: #E0BE7D;
+    --tot-gradient-color: radial-gradient(50% 50% at 50% 50%, #FFFFFF 54.69%, #EEEAE2 100%);
+    --tot-brown-color: #5D4D48;
+    --tot-darkgray-color: #5F5F5F;
+    --tot-gray-color: #EEEAE2;
+    --tot-secondary-color: #161616;
+    --tot-white-color: #ffffff;
+    --tot-primary-font-family: 'Poppins', sans-serif;;
+    --tot-secondary-font-family: 'Nanum Myeongjo', serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html, 
+body {
+    height: 100%;
+}
+
+body {
+    font-family: var(--tot-primary-font-family);
+    font-size: 18px;
+    line-height: 33px;
+    font-weight: 400;
+    /* overflow-y: hidden; */
+}
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+a:focus {
+    outline: 0 solid;
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+}
+
+p:not(:last-child){
+    margin-bottom: 10px;
+}
+  
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+.wlc-hero-area, .about-event-area, .about-person-area, .contact-area{
+    background: var(--tot-gradient-color);
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    display: flex;
+}
+.wlc-hero-area {
+    padding-top: 48px;
+}
+.about-event-area {
+    padding-top: 12px;
+}
+.about-person-area {
+    padding-top: 30px;
+}
+
+.wlc-content h1 {
+    color: var(--tot-brown-color);
+    font-weight: 700;
+    font-size: 91px;
+    line-height: 97px;
+    font-family: var(--tot-secondary-font-family);
+    margin-top: 55px;
+    margin-bottom: 0;
+}
+.wlc-content h2 {
+    color: var(--tot-orange-color);
+    font-weight: 400;
+    font-size: 68px;
+    line-height: 103px;
+    letter-spacing: 0.06em;
+    margin-bottom: 10px;
+}
+.wlc-content p{
+    letter-spacing: 0.075em;
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 34px;
+}
+
+.round-box {
+    background: #E0BE7D;
+    width: 790px;
+    height: 390px;
+    border-top-left-radius: 395.083px;
+    border-top-right-radius: 395.083px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+.section-content .round-box{
+    height: 670px;
+}
+
+.about-person-area .section-content .round-box{
+    height: 100%;
+    border-radius: 0;
+    bottom: 0;
+    top: auto;
+}
+
+.sign-btn {
+    display: block;
+    background: var(--tot-white-color);
+    width: 292px;
+    height: 66px;
+    line-height: 66px;
+    border-radius: 61px;
+    letter-spacing: 0.235em;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 76px auto 0;
+    transition: all 0.3s ease 0s;
+    color: var(--tot-brown-color);
+}
+.sign-btn:hover{
+    background: var(--tot-brown-color);
+    color: var(--tot-white-color);
+}
+.scroll-btn{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    -moz-animation: bounce 3s infinite;
+	-webkit-animation: bounce 3s infinite;
+	animation: bounce 3s infinite;
+}
+
+/**/
+.about-content .display-4 {
+    font-weight: 700;
+    line-height: 60px;
+    color: var(--tot-brown-color);
+    font-family: var(--tot-secondary-font-family);
+    margin-bottom: 120px;
+}
+.about-content .display-5 {
+    font-weight: 300;
+    line-height: 63px;
+    color: var(--tot-white-color);
+}
+.about-content .display-5 span {
+    display: block;
+    font-size: 29px;
+    line-height: 37px;
+}
+
+.about-content .display-3 {
+    line-height: 103px;
+    font-weight: 400;
+    font-size: 68px;
+    letter-spacing: 0.06em;
+    position: relative;
+    z-index: 9;
+    margin: 35px 0 0;
+    color: var(--tot-white-color);
+}
+.about-content p {
+    color: #fff;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 0.075em;
+    position: relative;
+    z-index: 9;
+    margin: -10px 0 0;
+}
+.about-content .scroll-btn {
+    margin:15px 0 0;
+}
+.about-content .scroll-up {
+    margin: 0 0 20px;
+}
+
+.section-content .left-image, .section-content .right-image {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.section-content .right-image {
+    left: auto;
+    right: 0;
+}
+.about-person-area{overflow-x: hidden;}
+.about-person-area .section-content p {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: 0.03em;
+    color: var(--tot-white-color);
+    margin-bottom: 40px;
+}
+
+.about-person-area .section-content .scroll-up {
+    margin: 0 0 40px;
+}
+.about-person-area .section-content .left-image{
+    left: -180px;
+}
+.about-person-area .section-content .right-image{
+    right: -96px;
+}
+
+/**/
+.contact-content .round-box {
+    bottom: auto;
+    top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 395.083px;
+    border-bottom-right-radius: 395.083px;
+    height: 360px;
+}
+.contact-content .scroll-up{
+    display: block;
+    margin: 0 auto 70px;
+}
+.contact-content .book {
+    padding-right: 100px;
+    margin-bottom: 10px;
+}
+.contact-content h2{
+    color: var(--tot-darkgray-color);
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 57px;
+    margin-bottom: 0;
+}
+
+.contact-content p{
+    font-weight: 300;
+    font-size: 27px;
+    line-height: 53px;
+    letter-spacing: 0.03em;
+    margin-top: 55px;
+    color: var(--tot-orange-color);
+}
+.contact-content p a:hover{color: var(--tot-brown-color);text-decoration: underline;}
+
+.event-session-2 {
+    position: relative;
+    z-index: 999;
+}
+
+@media (min-width: 1200px) {
+
+}
+
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+
+}
+
+
+@media only screen and (min-width: 576px) and (max-width: 767px)  {
+
+
+}
+
+@media (max-width: 575px) {
+
+    
+}
