@@ -1,0 +1,352 @@
+:root {
+    --tot-orange-color: #E0BE7D;
+    --tot-gradient-color: radial-gradient(50% 50% at 50% 50%, #FFFFFF 54.69%, #EEEAE2 100%);
+    --tot-brown-color: #5D4D48;
+    --tot-darkgray-color: #5F5F5F;
+    --tot-gray-color: #EEEAE2;
+    --tot-secondary-color: #161616;
+    --tot-white-color: #ffffff;
+    --tot-primary-font-family: 'Poppins', sans-serif;
+    ;
+    --tot-secondary-font-family: 'Nanum Myeongjo', serif;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: var(--tot-primary-font-family);
+    font-size: 18px;
+    line-height: 33px;
+    font-weight: 400;
+    /* overflow-y: hidden; */
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+a:focus {
+    outline: 0 solid;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+}
+
+p:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+.hero-text .sign-btn {
+    display: block;
+    width: 292px;
+    height: 66px;
+    line-height: 66px;
+    letter-spacing: 0.235em;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 60px auto 40px;
+    transition: all 0.3s ease 0s;
+    background: #E0BE7D;
+    border-radius: 10px;
+    color: #5D4D48;
+}
+
+.hero-text .sign-btn:hover {
+    color: #5d4d48;
+    background: #fff;
+}
+
+/* wlc-hero-area2 */
+.wlc-hero-area2 {
+    height: 100vh;
+    background: #EEEAE2;
+    overflow-x: hidden;
+    position: relative;
+    padding-top: 35px;
+    display: flex;
+}
+
+section.wlc-hero-area2:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 310px;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #3A3A35 100%);
+    z-index: 1;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 9;
+}
+
+.hero-content h2 {
+    color: #5D4D48;
+    font-weight: 700;
+    font-size: 77px;
+    line-height: 107%;
+    font-family: 'NanumMyeongjo';
+    font-style: normal;
+    margin-bottom: 35px;
+}
+
+.hero-content h3 {
+    color: #E0BE7D;
+    letter-spacing: 0.06em;
+    font-weight: 500;
+    font-size: 51px;
+    line-height: 1;
+}
+
+.hero-content p.schedule {
+    color: #5D4D48;
+    text-align: center;
+    letter-spacing: 0.015em;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 28px;
+}
+
+.hero-content p.author {
+    font-weight: 300;
+    font-size: 29px;
+    line-height: 78px;
+    color: var(--tot-white-color);
+}
+
+.hero-content p.author span {
+    font-size: 52px;
+}
+
+.wlc-hero-area2 .left-image {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.wlc-hero-area2 .right-image {
+    position: absolute;
+    bottom: 0;
+    left: auto;
+    right: -96px;
+}
+
+/* quote-area */
+
+section.quote-area {
+    margin-bottom: 100px;
+    margin-top: -40px;
+    position: relative;
+    z-index: 999;
+}
+
+section.quote-area .container {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 102px rgba(224, 190, 125, 0.26);
+    border-radius: 25px;
+    padding: 80px 65px;
+}
+
+.quote-content p {
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 45px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #5F5F5F;
+}
+
+
+/* book area */
+section.book-area {
+    padding: 60px 0;
+    margin-bottom: 65px;
+}
+
+section.book-area .container {
+    background: #EEEAE2;
+    border-radius: 25px;
+    height: 200px;
+    position: relative;
+}
+
+
+.book-img img {
+    position: absolute;
+    top: -94px;
+}
+
+.book-content p {
+    font-weight: 300;
+    font-size: 36px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #5F5F5F;
+    margin-bottom: 0;
+    line-height: 196.5%;
+
+}
+
+.book-content {
+    margin-top: 30px;
+}
+
+
+
+
+/* footer-area */
+footer.footer-area {
+    background: #5D4D48;
+    padding: 65px 0;
+}
+
+footer.footer-area p {
+    font-weight: 300;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #E0BE7D;
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+/*==========================
+==========Responsive========
+===========================*/
+
+@media (min-width: 1200px) {}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+@media only screen and (min-width: 576px) and (max-width: 767px) {}
+
+@media (max-width: 575px) {
+    .wlc-hero-area2 {
+        padding: 60px 0 0;
+        height: 650px;
+        display: inherit;
+    }
+
+    .hero-content h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .hero-content h3 {
+        font-size: 22px;
+        line-height: 1;
+    }
+
+    .hero-content p.schedule {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .wlc-hero-area2 .right-image {
+        position: absolute;
+        bottom: 0px;
+        left: auto;
+        right: -80px;
+    }
+
+    .wlc-hero-area2 .left-image {
+        position: absolute;
+        left: -106px;
+        bottom: 0;
+    }
+
+    .hero-text .sign-btn {
+        font-size: 22px;
+        margin: 65px auto 30px;
+    }
+
+    .hero-content p.author span {
+        font-size: 24px;
+    }
+
+    .hero-content p.author {
+        font-size: 16px;
+        line-height: 34px;
+    }
+
+    section.quote-area .container {
+        padding: 80px 15px;
+        border-radius: 15px;
+    }
+
+    .quote-content p {
+        font-size: 20px;
+        line-height: 36px;
+    }
+
+    section.book-area {
+        padding: 0;
+        margin-bottom: 65px;
+    }
+
+    section.book-area .container {
+        border-radius: 15px;
+        height: inherit;
+        padding: 50px 0 60px;
+    }
+
+    .book-content p {
+        font-size: 24px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        margin-bottom: 0;
+        line-height: 32px;
+    }
+
+    .book-img img {
+        position: inherit;
+        top: 0;
+        margin-left: 20px;
+
+    }
+
+    footer.footer-area p {
+        font-size: 22px;
+    }
+}
